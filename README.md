@@ -89,7 +89,9 @@ NDS-ETL/
 │   └── Vietravel/                   # Dữ liệu tour & lịch trình từ Vietravel
 ├── sql/
 │   └── travel_schema.sql            # Script DDL khởi tạo schema và bảng PostgreSQL NDS
+├── .env.example                     # Mẫu cấu hình biến môi trường
 ├── .gitignore                       # Cấu hình loại bỏ file rác, cache, env
+├── docker-compose.yml               # Cấu hình triển khai PostgreSQL và pgAdmin 4 bằng Docker
 └── README.md                        # Tài liệu hướng dẫn dự án
 ```
 
@@ -98,14 +100,43 @@ NDS-ETL/
 ## 5. Hướng Dẫn Cài Đặt & Sử Dụng
 
 ### Yêu cầu tiên quyết:
-- **PostgreSQL** 14+ 
-- **Python** 3.9+ (với các thư viện: `pandas`, `openpyxl`, `psycopg2` hoặc `asyncpg`, `sqlalchemy`)
+- **Docker & Docker Compose**
+- **Python** 3.9+ (cho môi trường ETL)
 
-### Bước 1: Khởi tạo Cơ sở dữ liệu NDS
-Chạy script DDL để tạo schema `travel` và toàn bộ cấu trúc bảng:
+### Bước 1: Khởi chạy Cơ sở dữ liệu với Docker Compose
 
+Tạo file cấu hình môi trường `.env` từ file mẫu:
 ```bash
-psql -U <username> -d <database_name> -f sql/travel_schema.sql
+cp .env.example .env
+```
+
+Khởi chạy cụm dịch vụ PostgreSQL 16 và pgAdmin 4:
+```bash
+docker compose up -d
+```
+
+> [!TIP]
+> Script DDL `sql/travel_schema.sql` đã được mount vào thư mục khởi tạo `/docker-entrypoint-initdb.d/`. Khi container PostgreSQL khởi chạy lần đầu tiên, toàn bộ schema `travel` và 12 bảng NDS sẽ được tự động tạo sẵn mà không cần chạy lệnh SQL thủ công.
+
+- **PostgreSQL Connection**:
+  - Host: `localhost`
+  - Port: `5432`
+  - Database: `nds_travel`
+  - User: `postgres`
+  - Password: `postgres`
+- **pgAdmin 4 (Web UI)**:
+  - URL: [http://localhost:8080](http://localhost:8080)
+  - Email: `admin@nds.com`
+  - Password: `admin`
+
+Để kiểm tra trạng thái các container:
+```bash
+docker compose ps
+```
+
+Để dừng các dịch vụ:
+```bash
+docker compose down
 ```
 
 ### Bước 2: Chuẩn bị môi trường Python cho ETL

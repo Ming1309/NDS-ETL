@@ -45,3 +45,7 @@ wheels/
 scratch/
 tmp/
 temp/
+
+# Environment variables
+.env
+
