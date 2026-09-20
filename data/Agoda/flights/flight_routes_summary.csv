@@ -1,0 +1,101 @@
+﻿route_id,origin_city,origin_code,dest_city,dest_code,departure_date,cabin_class,total_flights,min_price_vnd,max_price_vnd,avg_price_vnd,airlines_count,airlines_list,fastest_duration
+SGN_DAD_Economy_20260918,Ho Chi Minh City,SGN,Da Nang,DAD,2026-09-18,Economy,20,1396666,1809003,1617056,4,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines, Vietravel Airlines",1h 20m
+SGN_DAD_PremiumEconomy_20260918,Ho Chi Minh City,SGN,Da Nang,DAD,2026-09-18,PremiumEconomy,17,2791364,9524723,4874868,2,"VietJet Air, Sun PhuQuoc Airways",1h 15m
+SGN_DAD_Business_20260918,Ho Chi Minh City,SGN,Da Nang,DAD,2026-09-18,Business,15,3372570,9256912,4957749,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",1h 20m
+SGN_HAN_Economy_20260918,Ho Chi Minh City,SGN,Hanoi,HAN,2026-09-18,Economy,20,2203938,3523063,3089270,4,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines, Vietravel Airlines",2h 10m
+SGN_HAN_PremiumEconomy_20260918,Ho Chi Minh City,SGN,Hanoi,HAN,2026-09-18,PremiumEconomy,20,4612317,9496475,6487168,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",2h 5m
+SGN_HAN_Business_20260918,Ho Chi Minh City,SGN,Hanoi,HAN,2026-09-18,Business,20,5761979,10073173,7306902,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",2h 10m
+SGN_CXR_Economy_20260918,Ho Chi Minh City,SGN,Nha Trang,CXR,2026-09-18,Economy,20,1104148,5338423,3756777,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",1h 5m
+SGN_CXR_Business_20260918,Ho Chi Minh City,SGN,Nha Trang,CXR,2026-09-18,Business,4,4101330,5024865,4793981,1,Vietnam Airlines,1h 5m
+SGN_DLI_Economy_20260918,Ho Chi Minh City,SGN,Dalat,DLI,2026-09-18,Economy,19,1124690,9614473,5486514,2,"VietJet Air, Vietnam Airlines",0h 55m
+SGN_DLI_PremiumEconomy_20260918,Ho Chi Minh City,SGN,Dalat,DLI,2026-09-18,PremiumEconomy,2,1794214,5014223,3404218,1,VietJet Air,0h 55m
+SGN_DLI_Business_20260918,Ho Chi Minh City,SGN,Dalat,DLI,2026-09-18,Business,5,2668633,6283881,5015989,1,Vietnam Airlines,0h 55m
+SGN_PQC_Economy_20260918,Ho Chi Minh City,SGN,Phu Quoc Island,PQC,2026-09-18,Economy,20,969790,4125820,1509620,4,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines, Pacific Airlines",1h 5m
+SGN_PQC_PremiumEconomy_20260918,Ho Chi Minh City,SGN,Phu Quoc Island,PQC,2026-09-18,PremiumEconomy,7,1815697,5073961,2782882,2,"VietJet Air, Sun PhuQuoc Airways",1h 0m
+SGN_PQC_Business_20260918,Ho Chi Minh City,SGN,Phu Quoc Island,PQC,2026-09-18,Business,7,2657660,5395703,3682334,2,"Sun PhuQuoc Airways, Vietnam Airlines",1h 0m
+SGN_HUI_Economy_20260918,Ho Chi Minh City,SGN,Hue,HUI,2026-09-18,Economy,20,1449239,5868942,3227815,2,"VietJet Air, Vietnam Airlines",1h 30m
+SGN_HUI_PremiumEconomy_20260918,Ho Chi Minh City,SGN,Hue,HUI,2026-09-18,PremiumEconomy,8,2841396,9711542,5037450,1,VietJet Air,1h 25m
+SGN_HUI_Business_20260918,Ho Chi Minh City,SGN,Hue,HUI,2026-09-18,Business,5,3349541,4153976,3894430,1,Vietnam Airlines,1h 30m
+DAD_SGN_Economy_20260918,Da Nang,DAD,Ho Chi Minh City,SGN,2026-09-18,Economy,20,1215496,2377740,1769215,4,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines, Vietravel Airlines",1h 35m
+DAD_SGN_PremiumEconomy_20260918,Da Nang,DAD,Ho Chi Minh City,SGN,2026-09-18,PremiumEconomy,10,2874752,5173525,3104629,1,VietJet Air,1h 20m
+DAD_SGN_Business_20260918,Da Nang,DAD,Ho Chi Minh City,SGN,2026-09-18,Business,14,3476306,5666428,4327359,2,"Sun PhuQuoc Airways, Vietnam Airlines",1h 35m
+DAD_HAN_Economy_20260918,Da Nang,DAD,Hanoi,HAN,2026-09-18,Economy,20,940890,2437354,1643410,5,"Sun PhuQuoc Airways, VietJet Air, Vietnam Airlines, Vietravel Airlines, Pacific Airlines",1h 20m
+DAD_HAN_PremiumEconomy_20260918,Da Nang,DAD,Hanoi,HAN,2026-09-18,PremiumEconomy,10,2819160,6071095,3675134,2,"VietJet Air, Sun PhuQuoc Airways",1h 20m
+DAD_HAN_Business_20260918,Da Nang,DAD,Hanoi,HAN,2026-09-18,Business,12,3252255,5595138,4170802,2,"Sun PhuQuoc Airways, Vietnam Airlines",1h 30m
+DAD_CXR_Economy_20260918,Da Nang,DAD,Nha Trang,CXR,2026-09-18,Economy,20,2728655,4057351,3756287,2,"VietJet Air, Vietnam Airlines",16h 35m
+DAD_DLI_Economy_20260918,Da Nang,DAD,Dalat,DLI,2026-09-18,Economy,20,2680539,9218883,6715408,2,"VietJet Air, Vietnam Airlines",1h 10m
+DAD_DLI_Business_20260918,Da Nang,DAD,Dalat,DLI,2026-09-18,Business,1,3430291,3430291,3430291,1,Vietnam Airlines,1h 10m
+DAD_PQC_Economy_20260918,Da Nang,DAD,Phu Quoc Island,PQC,2026-09-18,Economy,20,1603979,3285425,2490144,2,"VietJet Air, Sun PhuQuoc Airways",1h 45m
+DAD_PQC_PremiumEconomy_20260918,Da Nang,DAD,Phu Quoc Island,PQC,2026-09-18,PremiumEconomy,1,3376631,3376631,3376631,1,VietJet Air,1h 45m
+DAD_PQC_Business_20260918,Da Nang,DAD,Phu Quoc Island,PQC,2026-09-18,Business,6,4487201,5979859,5187478,2,"Sun PhuQuoc Airways, Vietnam Airlines",1h 45m
+DAD_HUI_Economy_20260918,Da Nang,DAD,Hue,HUI,2026-09-18,Economy,20,3906794,6765544,5912986,1,Vietnam Airlines,3h 50m
+DAD_HUI_PremiumEconomy_20260918,Da Nang,DAD,Hue,HUI,2026-09-18,PremiumEconomy,20,9193901,15312878,10509052,1,Vietnam Airlines,4h 40m
+DAD_HUI_Business_20260918,Da Nang,DAD,Hue,HUI,2026-09-18,Business,10,11059450,54923835,16816950,1,Vietnam Airlines,4h 40m
+HAN_SGN_Economy_20260918,Hanoi,HAN,Ho Chi Minh City,SGN,2026-09-18,Economy,20,2201453,3129763,2626377,3,"VietJet Air, Sun PhuQuoc Airways, Vietravel Airlines",2h 10m
+HAN_SGN_PremiumEconomy_20260918,Hanoi,HAN,Ho Chi Minh City,SGN,2026-09-18,PremiumEconomy,20,3369973,9761534,5673052,2,"VietJet Air, Sun PhuQuoc Airways",2h 10m
+HAN_SGN_Business_20260918,Hanoi,HAN,Ho Chi Minh City,SGN,2026-09-18,Business,20,4903366,10485500,7572246,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",2h 15m
+HAN_DAD_Economy_20260918,Hanoi,HAN,Da Nang,DAD,2026-09-18,Economy,20,1079691,2347627,1747163,5,"Sun PhuQuoc Airways, VietJet Air, Vietnam Airlines, Vietravel Airlines, Pacific Airlines",1h 25m
+HAN_DAD_PremiumEconomy_20260918,Hanoi,HAN,Da Nang,DAD,2026-09-18,PremiumEconomy,10,2846956,5123743,3862278,1,VietJet Air,1h 20m
+HAN_DAD_Business_20260918,Hanoi,HAN,Da Nang,DAD,2026-09-18,Business,15,3278620,10038184,5110633,2,"Sun PhuQuoc Airways, Vietnam Airlines",1h 30m
+HAN_CXR_Economy_20260918,Hanoi,HAN,Nha Trang,CXR,2026-09-18,Economy,20,957622,4069649,2788669,4,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines, Vietravel Airlines",1h 50m
+HAN_CXR_Business_20260918,Hanoi,HAN,Nha Trang,CXR,2026-09-18,Business,3,6703739,9907544,8560296,2,"Sun PhuQuoc Airways, Vietnam Airlines",2h 0m
+HAN_DLI_Economy_20260918,Hanoi,HAN,Dalat,DLI,2026-09-18,Economy,16,941152,8206221,4357055,3,"VietJet Air, Vietnam Airlines, Vietravel Airlines",1h 45m
+HAN_DLI_PremiumEconomy_20260918,Hanoi,HAN,Dalat,DLI,2026-09-18,PremiumEconomy,5,2596168,6082371,3452830,1,VietJet Air,1h 50m
+HAN_DLI_Business_20260918,Hanoi,HAN,Dalat,DLI,2026-09-18,Business,1,5375906,5375906,5375906,1,Vietnam Airlines,1h 55m
+HAN_PQC_Economy_20260918,Hanoi,HAN,Phu Quoc Island,PQC,2026-09-18,Economy,20,673989,4435296,2521327,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",2h 5m
+HAN_PQC_PremiumEconomy_20260918,Hanoi,HAN,Phu Quoc Island,PQC,2026-09-18,PremiumEconomy,6,2596168,13707516,5742978,2,"VietJet Air, Sun PhuQuoc Airways",2h 5m
+HAN_PQC_Business_20260918,Hanoi,HAN,Phu Quoc Island,PQC,2026-09-18,Business,9,5537583,12047021,7575434,2,"Sun PhuQuoc Airways, Vietnam Airlines",2h 5m
+HAN_HUI_Economy_20260918,Hanoi,HAN,Hue,HUI,2026-09-18,Economy,20,1063453,8992454,6086995,2,"VietJet Air, Vietnam Airlines",1h 20m
+HAN_HUI_PremiumEconomy_20260918,Hanoi,HAN,Hue,HUI,2026-09-18,PremiumEconomy,1,4999288,4999288,4999288,1,VietJet Air,1h 15m
+HAN_HUI_Business_20260918,Hanoi,HAN,Hue,HUI,2026-09-18,Business,3,3265063,3998967,3517457,1,Vietnam Airlines,1h 20m
+CXR_SGN_Economy_20260918,Nha Trang,CXR,Ho Chi Minh City,SGN,2026-09-18,Economy,20,696323,8491302,4122648,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",1h 0m
+CXR_SGN_Business_20260918,Nha Trang,CXR,Ho Chi Minh City,SGN,2026-09-18,Business,5,3486975,5084528,4499030,2,"VietJet Air, Vietnam Airlines",1h 0m
+CXR_DAD_Economy_20260918,Nha Trang,CXR,Da Nang,DAD,2026-09-18,Economy,20,2478013,4833706,3732120,2,"VietJet Air, Vietnam Airlines",1h 5m
+CXR_DAD_Business_20260918,Nha Trang,CXR,Da Nang,DAD,2026-09-18,Business,1,5583125,5583125,5583125,1,Vietnam Airlines,1h 5m
+CXR_HAN_Economy_20260918,Nha Trang,CXR,Hanoi,HAN,2026-09-18,Economy,20,1377665,3770248,2967500,4,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines, Vietravel Airlines",1h 55m
+CXR_HAN_Business_20260918,Nha Trang,CXR,Hanoi,HAN,2026-09-18,Business,4,6731249,8894066,7551249,2,"Sun PhuQuoc Airways, Vietnam Airlines",2h 0m
+CXR_DLI_Economy_20260918,Nha Trang,CXR,Dalat,DLI,2026-09-18,Economy,18,3092101,9711464,5959269,2,"VietJet Air, Vietnam Airlines",4h 25m
+CXR_DLI_PremiumEconomy_20260918,Nha Trang,CXR,Dalat,DLI,2026-09-18,PremiumEconomy,11,7315630,12763997,9646837,2,"VietJet Air, Vietnam Airlines",4h 15m
+CXR_DLI_Business_20260918,Nha Trang,CXR,Dalat,DLI,2026-09-18,Business,5,10239402,12807713,11455198,1,Vietnam Airlines,4h 15m
+CXR_PQC_Economy_20260918,Nha Trang,CXR,Phu Quoc Island,PQC,2026-09-18,Economy,13,780321,7939235,4181088,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",1h 20m
+CXR_PQC_Business_20260918,Nha Trang,CXR,Phu Quoc Island,PQC,2026-09-18,Business,1,3540693,3540693,3540693,1,Sun PhuQuoc Airways,1h 20m
+CXR_HUI_Economy_20260918,Nha Trang,CXR,Hue,HUI,2026-09-18,Economy,20,3054443,6631144,4840791,2,"VietJet Air, Vietnam Airlines",20h 40m
+CXR_HUI_PremiumEconomy_20260918,Nha Trang,CXR,Hue,HUI,2026-09-18,PremiumEconomy,11,7523275,25477564,12323722,2,"VietJet Air, Vietnam Airlines",3h 45m
+CXR_HUI_Business_20260918,Nha Trang,CXR,Hue,HUI,2026-09-18,Business,5,10322289,12560835,11553199,1,Vietnam Airlines,6h 20m
+DLI_SGN_Economy_20260918,Dalat,DLI,Ho Chi Minh City,SGN,2026-09-18,Economy,20,894593,4269520,2712794,2,"VietJet Air, Vietnam Airlines",0h 55m
+DLI_SGN_PremiumEconomy_20260918,Dalat,DLI,Ho Chi Minh City,SGN,2026-09-18,PremiumEconomy,2,1758410,4914659,3336534,1,VietJet Air,0h 55m
+DLI_SGN_Business_20260918,Dalat,DLI,Ho Chi Minh City,SGN,2026-09-18,Business,5,4779370,5228630,4869222,1,Vietnam Airlines,0h 55m
+DLI_DAD_Economy_20260918,Dalat,DLI,Da Nang,DAD,2026-09-18,Economy,20,1742857,5816490,4652628,2,"VietJet Air, Vietnam Airlines",1h 5m
+DLI_DAD_PremiumEconomy_20260918,Dalat,DLI,Da Nang,DAD,2026-09-18,PremiumEconomy,1,2813601,2813601,2813601,1,VietJet Air,1h 5m
+DLI_DAD_Business_20260918,Dalat,DLI,Da Nang,DAD,2026-09-18,Business,1,3492955,3492955,3492955,1,Vietnam Airlines,1h 5m
+DLI_HAN_Economy_20260918,Dalat,DLI,Hanoi,HAN,2026-09-18,Economy,20,1076275,4161491,3110270,3,"VietJet Air, Vietnam Airlines, Vietravel Airlines",1h 55m
+DLI_HAN_PremiumEconomy_20260918,Dalat,DLI,Hanoi,HAN,2026-09-18,PremiumEconomy,5,2514257,5891409,3865117,1,VietJet Air,1h 35m
+DLI_HAN_Business_20260918,Dalat,DLI,Hanoi,HAN,2026-09-18,Business,2,5311093,5348649,5329871,1,Vietnam Airlines,1h 55m
+DLI_CXR_Economy_20260918,Dalat,DLI,Nha Trang,CXR,2026-09-18,Economy,20,2929145,6499201,4395713,1,Vietnam Airlines,5h 55m
+DLI_PQC_Economy_20260918,Dalat,DLI,Phu Quoc Island,PQC,2026-09-18,Economy,20,2916168,4276583,3404732,2,"VietJet Air, Vietnam Airlines",9h 10m
+DLI_PQC_PremiumEconomy_20260918,Dalat,DLI,Phu Quoc Island,PQC,2026-09-18,PremiumEconomy,11,6339844,11941919,9984068,2,"VietJet Air, Vietnam Airlines",4h 40m
+DLI_PQC_Business_20260918,Dalat,DLI,Phu Quoc Island,PQC,2026-09-18,Business,6,9960064,17053729,14264321,1,Vietnam Airlines,5h 50m
+DLI_HUI_Economy_20260918,Dalat,DLI,Hue,HUI,2026-09-18,Economy,20,3015098,5287268,3821088,2,"VietJet Air, Vietnam Airlines",23h 20m
+PQC_SGN_Economy_20260918,Phu Quoc Island,PQC,Ho Chi Minh City,SGN,2026-09-18,Economy,20,631623,2594585,1313523,4,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines, Pacific Airlines",1h 0m
+PQC_SGN_PremiumEconomy_20260918,Phu Quoc Island,PQC,Ho Chi Minh City,SGN,2026-09-18,PremiumEconomy,5,1815697,5073961,2874294,1,VietJet Air,1h 0m
+PQC_SGN_Business_20260918,Phu Quoc Island,PQC,Ho Chi Minh City,SGN,2026-09-18,Business,5,3164791,11191960,5165303,2,"Sun PhuQuoc Airways, Vietnam Airlines",1h 5m
+PQC_DAD_Economy_20260918,Phu Quoc Island,PQC,Da Nang,DAD,2026-09-18,Economy,20,662434,3417408,2425324,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",1h 45m
+PQC_DAD_PremiumEconomy_20260918,Phu Quoc Island,PQC,Da Nang,DAD,2026-09-18,PremiumEconomy,2,2514257,2514257,2514257,1,VietJet Air,1h 45m
+PQC_DAD_Business_20260918,Phu Quoc Island,PQC,Da Nang,DAD,2026-09-18,Business,2,4409595,6519143,5464369,1,Sun PhuQuoc Airways,1h 45m
+PQC_HAN_Economy_20260918,Phu Quoc Island,PQC,Hanoi,HAN,2026-09-18,Economy,20,672660,4738073,2248563,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",2h 5m
+PQC_HAN_PremiumEconomy_20260918,Phu Quoc Island,PQC,Hanoi,HAN,2026-09-18,PremiumEconomy,5,2591048,6070436,3286925,1,VietJet Air,2h 5m
+PQC_HAN_Business_20260918,Phu Quoc Island,PQC,Hanoi,HAN,2026-09-18,Business,7,5568924,13997245,7615605,2,"Sun PhuQuoc Airways, Vietnam Airlines",2h 5m
+PQC_CXR_Economy_20260918,Phu Quoc Island,PQC,Nha Trang,CXR,2026-09-18,Economy,20,772579,4106630,2727647,3,"VietJet Air, Sun PhuQuoc Airways, Vietnam Airlines",1h 20m
+PQC_CXR_Business_20260918,Phu Quoc Island,PQC,Nha Trang,CXR,2026-09-18,Business,1,3505821,3505821,3505821,1,Sun PhuQuoc Airways,1h 20m
+PQC_DLI_Economy_20260918,Phu Quoc Island,PQC,Dalat,DLI,2026-09-18,Economy,20,1994439,3442753,2731919,2,"VietJet Air, Vietnam Airlines",12h 45m
+PQC_DLI_PremiumEconomy_20260918,Phu Quoc Island,PQC,Dalat,DLI,2026-09-18,PremiumEconomy,4,7107091,11523064,10107079,2,"VietJet Air, Vietnam Airlines",5h 25m
+PQC_DLI_Business_20260918,Phu Quoc Island,PQC,Dalat,DLI,2026-09-18,Business,1,10060131,10060131,10060131,1,Vietnam Airlines,5h 25m
+PQC_HUI_Economy_20260918,Phu Quoc Island,PQC,Hue,HUI,2026-09-18,Economy,20,3117206,7128299,4523800,2,"VietJet Air, Vietnam Airlines",14h 10m
+PQC_HUI_PremiumEconomy_20260918,Phu Quoc Island,PQC,Hue,HUI,2026-09-18,PremiumEconomy,11,7374429,17582273,12296378,2,"VietJet Air, Vietnam Airlines",4h 35m
+PQC_HUI_Business_20260918,Phu Quoc Island,PQC,Hue,HUI,2026-09-18,Business,1,10180338,10180338,10180338,1,Vietnam Airlines,7h 30m
+HUI_SGN_Economy_20260918,Hue,HUI,Ho Chi Minh City,SGN,2026-09-18,Economy,20,1583125,5098626,3347307,3,"VietJet Air, Vietnam Airlines, Pacific Airlines",1h 25m
+HUI_SGN_PremiumEconomy_20260918,Hue,HUI,Ho Chi Minh City,SGN,2026-09-18,PremiumEconomy,6,2813601,5064004,3938802,1,VietJet Air,1h 25m
+HUI_SGN_Business_20260918,Hue,HUI,Ho Chi Minh City,SGN,2026-09-18,Business,3,3222227,4079006,3538200,1,Vietnam Airlines,1h 30m
+HUI_DAD_Economy_20260918,Hue,HUI,Da Nang,DAD,2026-09-18,Economy,17,4393462,7735767,5763229,1,Vietnam Airlines,23h 50m
+HUI_HAN_Economy_20260918,Hue,HUI,Hanoi,HAN,2026-09-18,Economy,19,2396701,10077085,6034750,2,"VietJet Air, Vietnam Airlines",1h 15m
+HUI_HAN_PremiumEconomy_20260918,Hue,HUI,Hanoi,HAN,2026-09-18,PremiumEconomy,1,4989332,4989332,4989332,1,VietJet Air,1h 15m
