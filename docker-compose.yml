@@ -12,6 +12,8 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./sql/travel_schema.sql:/docker-entrypoint-initdb.d/01_travel_schema.sql:ro
+      - ./sql/02_staging_schema.sql:/docker-entrypoint-initdb.d/02_staging_schema.sql:ro
+      - ./sql/03_travel_constraints.sql:/docker-entrypoint-initdb.d/03_travel_constraints.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-nds_travel}"]
       interval: 5s

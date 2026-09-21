@@ -145,7 +145,105 @@ Tạo môi trường ảo và cài đặt các phụ thuộc cần thiết:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install pandas openpyxl sqlalchemy psycopg2-binary
+pip install -r requirements.txt
+```
+
+### Bước 3: Vận Hành Hệ Thống ETL CLI
+
+Module `etl` hỗ trợ phân tích nguồn (`profile`) và thực thi nạp dữ liệu (`run`) với cờ chạy thử nghiệm (`--dry-run`):
+
+#### 1. Phân tích & thống kê dữ liệu nguồn (không ghi database):
+```bash
+python -m etl profile --source all
+```
+
+#### 2. Chạy thử nghiệm nạp (Dry-run simulation & đối soát):
+```bash
+python -m etl run --source bestprice --dry-run
+python -m etl run --source vietravel --dry-run
+python -m etl run --source pystravel --dry-run
+python -m etl run --source all --dry-run
+```
+
+#### 3. Chạy nạp dữ liệu chính thức vào PostgreSQL NDS:
+```bash
+python -m etl run --source all
+```
+
+#### Reset và nạp lại từ đầu
+
+Lệnh reset chỉ xóa dữ liệu ETL của nguồn được chọn, theo thứ tự khóa ngoại; không xóa schema, địa danh hay dữ liệu của nguồn khác. Luôn sao lưu database trước khi chạy reset.
+
+```bash
+python -m etl reset --source all --dry-run
+python -m etl reset --source all
+python -m etl run --source all
+```
+
+Mỗi lượt nạp lưu raw record trước khi lọc, trạng thái run và dữ liệu chỉ lưu staging. Báo cáo production chỉ đạt khi transaction của từng nguồn đã commit và đối soát số tour thành công.
+
+#### 4. Chạy kiểm thử tự động (Unit & Integration Tests):
+```bash
+pytest -v tests/
+```
+
+### Bước 4: Truy Vấn Dữ Liệu Trực Tiếp Bằng `docker exec`
+
+Bạn có thể dùng `docker exec` để tương tác trực tiếp với PostgreSQL qua `psql` mà không cần cài đặt client trên máy:
+
+#### 1. Mở terminal psql tương tác:
+```bash
+docker exec -it nds_postgres psql -U postgres -d nds_travel
+```
+
+#### 2. Thống kê số lượng bản ghi 12 bảng `travel` (NDS):
+```bash
+docker exec -it nds_postgres psql -U postgres -d nds_travel -c "
+SELECT table_name, count FROM (
+    SELECT 'source_system' AS table_name, count(*) AS count FROM travel.source_system
+    UNION ALL SELECT 'category', count(*) FROM travel.category
+    UNION ALL SELECT 'source_entity', count(*) FROM travel.source_entity
+    UNION ALL SELECT 'tour', count(*) FROM travel.tour
+    UNION ALL SELECT 'location', count(*) FROM travel.location
+    UNION ALL SELECT 'tour_destination', count(*) FROM travel.tour_destination
+    UNION ALL SELECT 'tour_departure', count(*) FROM travel.tour_departure
+    UNION ALL SELECT 'tour_departure_price', count(*) FROM travel.tour_departure_price
+    UNION ALL SELECT 'itinerary', count(*) FROM travel.itinerary
+    UNION ALL SELECT 'itinerary_item', count(*) FROM travel.itinerary_item
+    UNION ALL SELECT 'review', count(*) FROM travel.review
+) t;
+"
+```
+
+#### 3. Thống kê số lượng bản ghi các bảng `staging`:
+```bash
+docker exec -it nds_postgres psql -U postgres -d nds_travel -c "
+SELECT table_name, count FROM (
+    SELECT 'staging.etl_run' AS table_name, count(*) AS count FROM staging.etl_run
+    UNION ALL SELECT 'staging.snapshot', count(*) FROM staging.snapshot
+    UNION ALL SELECT 'staging.raw_record', count(*) FROM staging.raw_record
+    UNION ALL SELECT 'staging.etl_issue', count(*) FROM staging.etl_issue
+    UNION ALL SELECT 'staging.mapping', count(*) FROM staging.mapping
+    UNION ALL SELECT 'staging.unmapped_tour_data', count(*) FROM staging.unmapped_tour_data
+) t;
+"
+```
+
+#### 4. Truy vấn mẫu thông tin tour kèm nguồn:
+```bash
+docker exec -it nds_postgres psql -U postgres -d nds_travel -c "
+SELECT
+    se.source_entity_id,
+    ss.name AS source,
+    se.source_record_key,
+    se.name AS tour_name,
+    t.duration_days,
+    t.duration_nights
+FROM travel.source_entity se
+JOIN travel.source_system ss ON se.source_system_id = ss.source_system_id
+JOIN travel.tour t ON se.source_entity_id = t.source_entity_id
+LIMIT 5;
+"
 ```
 
 ---
@@ -155,6 +253,8 @@ pip install pandas openpyxl sqlalchemy psycopg2-binary
 - [x] Tổ chức, phân tách và làm sạch thư mục `data/` theo từng nguồn.
 - [x] Thiết kế mô hình dữ liệu quan hệ NDS chuẩn 3NF (`sql/travel_schema.sql`).
 - [x] Khởi tạo Git repository và xây dựng tài liệu dự án (`README.md`).
-- [ ] Xây dựng các module **Extractors** đọc dữ liệu đa định dạng (JSON, Excel, CSV).
-- [ ] Xây dựng module **Transformer** làm sạch text tiếng Việt, chuẩn hóa ngày tháng, tiền tệ và bóc tách cấu trúc lồng.
-- [ ] Xây dựng module **Loader** nạp dữ liệu vào PostgreSQL NDS đảm bảo ràng buộc toàn vẹn khóa ngoại (FK) và chống trùng lặp (Upsert / Deduplication).
+- [x] Xây dựng các module **Extractors** đọc dữ liệu đa định dạng (JSON, Excel, CSV) (`etl/extractors/`).
+- [x] Xây dựng module **Normalizers & Adapters** làm sạch tiếng Việt, chuẩn hóa ngày tháng, tiền tệ và bóc tách cấu trúc lồng (`etl/normalizers/`, `etl/adapters/`).
+- [x] Xây dựng module **Staging & NDS Loader** nạp dữ liệu đảm bảo toàn vẹn tham chiếu (FK), chống trùng lặp (Upsert idempotent) và lưu vết audit/issue (`etl/loader/`).
+- [x] Xây dựng giao diện dòng lệnh **CLI** (`etl/cli.py`, `python -m etl profile`, `python -m etl run`).
+- [x] Xây dựng bộ kiểm thử tự động toàn diện đạt 20/20 test cases (`tests/`).

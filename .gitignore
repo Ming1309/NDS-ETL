@@ -48,4 +48,6 @@ temp/
 
 # Environment variables
 .env
-
+.pytest_cache/
+reports/
+exports/
